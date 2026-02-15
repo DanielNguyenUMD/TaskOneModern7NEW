@@ -4,6 +4,7 @@
 [ext_resource type="Material" uid="uid://y87l148keva" path="res://Materials/BridgeTerrain.tres" id="2_a2jc6"]
 [ext_resource type="PackedScene" uid="uid://dexo37vqifhhy" path="res://Scenes/player.tscn" id="3_qniev"]
 [ext_resource type="Texture2D" uid="uid://cuyh8hew637ju" path="res://player/reticle.png" id="4_gxr5a"]
+[ext_resource type="PackedScene" uid="uid://dte44oyovlgu1" path="res://Scenes/slime_mob.tscn" id="6_gxr5a"]
 [ext_resource type="PackedScene" uid="uid://jmjfudw56t36" path="res://MobSpawner3D.tscn" id="6_qniev"]
 
 [sub_resource type="Environment" id="Environment_80nbo"]
@@ -126,3 +127,6 @@ expand_mode = 1
 
 [node name="MobSpawner3D" parent="." unique_id=474016107 instance=ExtResource("6_qniev")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.7, 1.8000001, 23.9)
+
+[node name="slime_mob" parent="." unique_id=1915007256 instance=ExtResource("6_gxr5a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5731915, -0.19999981, 28.254618)
