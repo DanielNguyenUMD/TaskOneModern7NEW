@@ -1,15 +1,8 @@
 [gd_scene format=3 uid="uid://70a5y8346sch"]
 
 [ext_resource type="ArrayMesh" uid="uid://khis1aw2301y" path="res://ItemScenes/slime5.obj" id="1_6cljn"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3t44b"]
-albedo_color = Color(0.6100528, 0.8800343, 0.5602135, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n3mk5"]
-albedo_color = Color(0.6117647, 0.8784314, 0.56078434, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aveqx"]
-albedo_color = Color(0.50377333, 0.7729758, 0.45248294, 1)
+[ext_resource type="Material" uid="uid://bj8b8dughcjks" path="res://slimebody.tres" id="2_n3mk5"]
+[ext_resource type="Material" uid="uid://csfjjr87o0wk7" path="res://slimedetail.tres" id="3_aveqx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d4xx3"]
 
@@ -24,9 +17,9 @@ albedo_color = Color(0, 0, 0, 1)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Armature" unique_id=405304654]
 mesh = ExtResource("1_6cljn")
-surface_material_override/0 = SubResource("StandardMaterial3D_3t44b")
-surface_material_override/1 = SubResource("StandardMaterial3D_n3mk5")
-surface_material_override/2 = SubResource("StandardMaterial3D_aveqx")
+surface_material_override/0 = ExtResource("2_n3mk5")
+surface_material_override/1 = ExtResource("2_n3mk5")
+surface_material_override/2 = ExtResource("3_aveqx")
 surface_material_override/3 = SubResource("StandardMaterial3D_d4xx3")
 surface_material_override/4 = SubResource("StandardMaterial3D_ojgya")
 surface_material_override/5 = SubResource("StandardMaterial3D_gsqxd")

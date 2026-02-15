@@ -102,9 +102,13 @@ func split_on_death():
 	slime2.splitFlag = false
 	slime3.splitFlag = false
 	
-	slime1.health = 1
-	slime2.health = 1
-	slime3.health = 1
+	slime1.itemDropChance = 2
+	slime2.itemDropChance = 2
+	slime3.itemDropChance = 2
+	
+	slime1.health = 10
+	slime2.health = 10
+	slime3.health = 10
 	
 	slime1.scale = %slime_model.scale * 0.75
 	slime2.scale = %slime_model.scale * 0.75
