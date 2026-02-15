@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dte44oyovlgu1"]
+
+[ext_resource type="Script" uid="uid://2y2sy2ioepa5" path="res://slime_mob.gd" id="1_df7xr"]
+[ext_resource type="PackedScene" uid="uid://70a5y8346sch" path="res://slime_model.tscn" id="1_li30l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_df7xr"]
+
+[node name="slime_mob" type="RigidBody3D" unique_id=1915007256]
+script = ExtResource("1_df7xr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2056955920]
+shape = SubResource("BoxShape3D_df7xr")
+
+[node name="slime_model" parent="." unique_id=1834001838 instance=ExtResource("1_li30l")]
+unique_name_in_owner = true
+
+[editable path="slime_model"]
