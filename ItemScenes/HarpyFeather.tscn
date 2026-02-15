@@ -71,6 +71,12 @@ _data = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_03tw8"]
 
 [node name="HarpyFeather" type="RigidBody3D" unique_id=1274755492]
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
 script = ExtResource("1_sa231")
 
 [node name="Hitbox" type="CollisionShape3D" parent="." unique_id=1816992146]

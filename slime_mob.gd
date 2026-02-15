@@ -45,7 +45,7 @@ func take_damage():
 				var pills_item = PILLS.instantiate()
 				get_tree().current_scene.add_child(pills_item)
 				pills_item.global_position = %slime_model.global_position
-				pills_item.global_position += 0.8
+				pills_item.global_position.y += 0.8
 				
 			if(itemTypeChance == 2):
 				print("Dropped beans")
@@ -53,7 +53,7 @@ func take_damage():
 				var beans_item = BEANS.instantiate()
 				get_tree().current_scene.add_child(beans_item)
 				beans_item.global_position = %slime_model.global_position
-				beans_item.global_position += 0.8
+				beans_item.global_position.y += 0.8
 				
 			if(itemTypeChance == 3):
 				print("Dropped adrenaline")
@@ -61,7 +61,7 @@ func take_damage():
 				var adren_item = ADREN.instantiate()
 				get_tree().current_scene.add_child(adren_item)
 				adren_item.global_position = %slime_model.global_position
-				adren_item.global_position += 0.8
+				adren_item.global_position.y += 0.8
 				
 			if(itemTypeChance == 4):
 				print("Dropped harpy feather")
@@ -69,7 +69,7 @@ func take_damage():
 				var harpy_item = HARPY.instantiate()
 				get_tree().current_scene.add_child(harpy_item)
 				harpy_item.global_position = %slime_model.global_position
-				harpy_item.global_position += 0.8
+				harpy_item.global_position.y += 0.8				
 				
 func split_on_death():
 	
@@ -78,8 +78,8 @@ func split_on_death():
 	const SLIME3 = preload("res://Scenes/slime_mob.tscn")
 	
 	var slime1 = SLIME1.instantiate()
-	var slime2 = SLIME1.instantiate()
-	var slime3 = SLIME1.instantiate()
+	var slime2 = SLIME2.instantiate()
+	var slime3 = SLIME3.instantiate()
 	
 	slime1.name = "slime1"
 	slime2.name = "slime2"
